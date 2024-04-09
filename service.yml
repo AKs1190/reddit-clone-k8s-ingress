@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   # Service name
-  name: reddit-clone-service
+  name: reddit-app-service
 spec:
   selector:
     # Selector for Pods

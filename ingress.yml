@@ -4,23 +4,13 @@ metadata:
   name: ingress-reddit-app
 spec:
   rules:
-  - host: "domain.com"
+  - host: "akshay.com"
     http:
       paths:
       - pathType: Prefix
-        path: "/test"
+        path: "/why"
         backend:
           service:
-            name: reddit-clone-service
-            port:
-              number: 3000
-  - host: "*.domain.com"
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/test"
-        backend:
-          service:
-            name: reddit-clone-service
+            name: reddit-app-service
             port:
               number: 3000
